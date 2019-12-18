@@ -1,0 +1,2 @@
+sudo aa-genprof nc
+Tą komendą generujemy politykę dla programu nc

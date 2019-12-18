@@ -1,0 +1,2 @@
+Kompilujemy: g++ main.cpp -o main
+Program uruchamiamy za pomocą polecania ./main

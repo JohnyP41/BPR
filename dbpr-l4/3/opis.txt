@@ -1,0 +1,1 @@
+Polityka dla nc tak wygląda, ponieważ ten program żąda dostępu do praw rw w katalogach /lib i /etc oraz dostępu do socketów.

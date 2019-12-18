@@ -1,0 +1,15 @@
+module policy 1.0;
+
+require {
+  type nc_t;
+  type etc_t;
+  type lib_t;
+  type uuidd_t;
+  class unix_socket_stream { connectto getattr ioctl read write };
+  class file { create getattr map open read rename write setattr };
+}
+
+#============= nc_t ==============
+allow nc_t etc_t:file { create open write };
+allow nc_t lib_t:file { create open write };
+allow nc_t uuidd_t:unix_socket_stream { connectto read write };

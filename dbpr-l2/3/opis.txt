@@ -1,0 +1,10 @@
+Kod jest bardzo długi jak na pustą funkcję.
+Zawiera typowe operacje dla asemblera.
+Widać w tym kodzie etykiete ,która ma nazwę funkcji test.Widać ,że test jest funkcją.
+	.zero	1
+	.local	_ZStL8__ioinit
+	.comm	_ZStL8__ioinit,1,1
+	.text
+	.globl	_Z4testv
+	.type	_Z4testv, @function
+_Z4testv:

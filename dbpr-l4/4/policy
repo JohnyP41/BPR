@@ -1,0 +1,6 @@
+role nc u
+subject /usr/bin/nc o
+    /etc/ rw
+    /lib/ rw
+    bind 0.0.0.0/0:1024-65535 stream tcp
+    connect 22.22.22.22:5190 stream tcp

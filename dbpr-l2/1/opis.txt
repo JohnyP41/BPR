@@ -1,0 +1,10 @@
+Jest to kod assemblerowy.
+Zawiera typowe operacje dla assemblera.
+Jest bardzo długi.
+Są opisane typy zmiennych w kodzie.
+Tutaj
+	call	_Unwind_Resume@PLT
+.LEHE2:
+.L11:
+	call	__stack_chk_fail@PLT
+mamy ciekawe wywołania funkcji.

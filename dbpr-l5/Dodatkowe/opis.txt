@@ -1,0 +1,21 @@
+Niszczenie programowe (logiczne)
+Polegające na wielokrotnym (nawet 35-krotnym) nadpisywaniu danych na nośniku przypadkowymi wartościami co całkowicie (?) wyklucza ich odtworzenie. Po przeprowadzeniu tej procedury nośnik jest w pełni sprawny i nadaje się do dalszego używania.
+1.kasowanie danych z poziomu systemu operacyjnego
+2.specjalne oprogramowanie nadpisujące dane
+3.niszczarka danych cyfrowych
+
+Niszczenie sprzętowe (fizyczne)
+Polegające na usuwaniu zawartych na nośniku danych za pomocą specjalnych urządzeń i/lub niszczeniu samych nośników. Dysk twardy po takiej operacji nie nadaje się do dalszego użytkowania.
+1.metody "domowe"
+2.metody mechaniczne
+3.metody magnetyczne
+4.metody termiczne
+5.metody radioaktywne
+6.metody pirotechniczne
+7.metody chemiczne
+Owe metody mają różną skuteczność - nie wszystkie metody gwarantują niemożliwość odzyskania danych przez specjalistów teraz, a co dopiero w przyszłości. 
+
+Problemy: 
+- Nie wszystkie metody gwarantują niemożliwość odzyskania danych
+- Można uszkodzić dany nośnik
+- Niszczenie sprzętowe wymaga środków chemicznych,pirotechnicznych

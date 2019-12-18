@@ -1,0 +1,10 @@
+Kod jest długi jak na tylko jedną pętlę.
+Jest ona rozpisana na kroki i etykiety.
+Main jest funkcją globalną.
+_ZStL19piecewise_construct:
+	.zero	1
+	.local	_ZStL8__ioinit
+	.comm	_ZStL8__ioinit,1,1
+	.text
+	.globl	main
+	.type	main, @function

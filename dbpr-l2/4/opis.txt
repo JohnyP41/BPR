@@ -1,0 +1,65 @@
+///przed naprawą błędów
+s426228@lts:~/Desktop/DBPR/dbpr-l2/4$ g++ c1-1.cpp -o c1-1
+s426228@lts:~/Desktop/DBPR/dbpr-l2/4$ valgrind --leak-check=yes ./c1-1
+==15323== Memcheck, a memory error detector
+==15323== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==15323== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==15323== Command: ./c1-1
+==15323== 
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+*** stack smashing detected ***: <unknown> terminated
+==15323== 
+==15323== Process terminating with default action of signal 6 (SIGABRT)
+==15323==    at 0x5203E97: raise (raise.c:51)
+==15323==    by 0x5205800: abort (abort.c:79)
+==15323==    by 0x524E896: __libc_message (libc_fatal.c:181)
+==15323==    by 0x52F9CD0: __fortify_fail_abort (fortify_fail.c:33)
+==15323==    by 0x52F9C91: __stack_chk_fail (stack_chk_fail.c:29)
+==15323==    by 0x108990: main (in /home/students/s426228/Desktop/DBPR/dbpr-l2/4/c1-1)
+==15323== 
+==15323== HEAP SUMMARY:
+==15323==     in use at exit: 0 bytes in 0 blocks
+==15323==   total heap usage: 2 allocs, 2 frees, 73,728 bytes allocated
+==15323== 
+==15323== All heap blocks were freed -- no leaks are possible
+==15323== 
+==15323== For counts of detected and suppressed errors, rerun with: -v
+==15323== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Aborted
+
+///po naprawie wszystkich błędów
+s426228@lts:~/Desktop/DBPR/dbpr-l2/4$ g++ c1-1.cpp -o c1-1
+s426228@lts:~/Desktop/DBPR/dbpr-l2/4$ valgrind --leak-check=yes ./c1-1
+==10012== Memcheck, a memory error detector
+==10012== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==10012== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==10012== Command: ./c1-1
+==10012== 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+==10012== 
+==10012== HEAP SUMMARY:
+==10012==     in use at exit: 0 bytes in 0 blocks
+==10012==   total heap usage: 2 allocs, 2 frees, 73,728 bytes allocated
+==10012== 
+==10012== All heap blocks were freed -- no leaks are possible
+==10012== 
+==10012== For counts of detected and suppressed errors, rerun with: -v
+==10012== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

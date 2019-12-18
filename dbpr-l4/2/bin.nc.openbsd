@@ -1,0 +1,10 @@
+# Last Modified: Fri Nov 29 15:04:21 2019
+#include <tunables/global>
+
+/bin/nc.openbsd {
+  #include <abstractions/base>
+
+  /bin/nc.openbsd mr,
+  /lib/x86_64-linux-gnu/ld-*.so mr,
+
+}

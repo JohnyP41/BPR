@@ -1,0 +1,3 @@
+Obecnie porównywany jest hasz hasła z haszem hasła,który jest w bazie.
+Różnica w czasie obecnie wynosi 0,1 sekundy. To mało w porównaniu do tego co było kiedyś.
+Aby się zabezpieczyć możemy wysyłać odpowiedź od serwera zawsze po tym samym czasie. Wtedy różnica będzie 0.

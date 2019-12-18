@@ -1,0 +1,51 @@
+0.
+\\\
+s426228@pc22j:~/Desktop/DBPR/4$ ./c1-1 
+1  char
+4  int
+2  short int
+8  long int
+8  long long int
+Rozmiary są w bajtach.
+1.
+\\\
+s426228@pc22j:~/Desktop/DBPR/4$ ./c1-1 
+-1691097344
+32767
+1
+0
+-1691097344
+32767
+179567984
+21908
+1
+0
+*** stack smashing detected ***: <unknown> terminated
+Aborted
+2.
+\\\
+s426228@pc22j:~/Desktop/DBPR/4$ ./c1-1 
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+*** stack smashing detected ***: <unknown> terminated
+Aborted
+3.
+\\\
+2
+0
+37047648
+22077
+1
+0
+34949965
+22077
+-1937303136
+32728

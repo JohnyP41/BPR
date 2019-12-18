@@ -1,0 +1,153 @@
+///Przed zmianą kolejnosci pętli
+s426228@lts:~/Desktop/DBPR/dbpr-l3/5$ valgrind --tool=cachegrind ./main
+==11551== Cachegrind, a cache and branch-prediction profiler
+==11551== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==11551== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==11551== Command: ./main
+==11551== 
+--11551-- warning: L3 cache found, using its data for the LL simulation.
+Podaj dane dla macierzy A
+2
+2
+2
+2
+2
+2
+2
+2
+2
+Podaj dane dla macierzy B
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+C = A x B:
+    12    12    12
+    12    12    12
+    12    12    12
+==11551== 
+==11551== I   refs:      2,211,581
+==11551== I1  misses:        1,850
+==11551== LLi misses:        1,749
+==11551== I1  miss rate:      0.08%
+==11551== LLi miss rate:      0.08%
+==11551== 
+==11551== D   refs:        709,857  (543,303 rd   + 166,554 wr)
+==11551== D1  misses:       14,574  ( 12,302 rd   +   2,272 wr)
+==11551== LLd misses:        9,436  (  7,971 rd   +   1,465 wr)
+==11551== D1  miss rate:       2.1% (    2.3%     +     1.4%  )
+==11551== LLd miss rate:       1.3% (    1.5%     +     0.9%  )
+==11551== 
+==11551== LL refs:          16,424  ( 14,152 rd   +   2,272 wr)
+==11551== LL misses:        11,185  (  9,720 rd   +   1,465 wr)
+==11551== LL miss rate:        0.4% (    0.4%     +     0.9%  )
+
+///Po zmianie kolejności petli
+s426228@lts:~/Desktop/DBPR/dbpr-l3/5$ valgrind --tool=cachegrind ./main
+==21411== Cachegrind, a cache and branch-prediction profiler
+==21411== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==21411== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==21411== Command: ./main
+==21411== 
+--21411-- warning: L3 cache found, using its data for the LL simulation.
+Podaj dane dla macierzy A
+2
+2
+2
+2
+2
+2
+2
+2
+2
+Podaj dane dla macierzy B
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+C = A x B:
+67176864     01083760
+     01084928     0
+     0     0-16777136
+*** stack smashing detected ***: <unknown> terminated
+==21411== 
+==21411== Process terminating with default action of signal 6 (SIGABRT)
+==21411==    at 0x4FF3E97: raise (raise.c:51)
+==21411==    by 0x4FF5800: abort (abort.c:79)
+==21411==    by 0x503E896: __libc_message (libc_fatal.c:181)
+==21411==    by 0x50E9CD0: __fortify_fail_abort (fortify_fail.c:33)
+==21411==    by 0x50E9C91: __stack_chk_fail (stack_chk_fail.c:29)
+==21411==    by 0x108D86: main (in /home/students/s426228/Desktop/DBPR/dbpr-l3/5/main)
+==21411== 
+==21411== I   refs:      2,206,171
+==21411== I1  misses:        1,768
+==21411== LLi misses:        1,687
+==21411== I1  miss rate:      0.08%
+==21411== LLi miss rate:      0.08%
+==21411== 
+==21411== D   refs:        707,355  (541,495 rd   + 165,860 wr)
+==21411== D1  misses:       14,476  ( 12,211 rd   +   2,265 wr)
+==21411== LLd misses:        9,432  (  7,967 rd   +   1,465 wr)
+==21411== D1  miss rate:       2.0% (    2.3%     +     1.4%  )
+==21411== LLd miss rate:       1.3% (    1.5%     +     0.9%  )
+==21411== 
+==21411== LL refs:          16,244  ( 13,979 rd   +   2,265 wr)
+==21411== LL misses:        11,119  (  9,654 rd   +   1,465 wr)
+==21411== LL miss rate:        0.4% (    0.4%     +     0.9%  )
+Aborted
+
+
+///Sprawdzam wycieki pamięci
+s426228@lts:~/Desktop/DBPR/dbpr-l3/5$ valgrind --tool=memcheck ./main
+==24827== Memcheck, a memory error detector
+==24827== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24827== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==24827== Command: ./main
+==24827== 
+Podaj dane dla macierzy A
+2
+2
+2
+2
+2
+2
+2
+2
+2
+Podaj dane dla macierzy B
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+C = A x B:
+    12    12    12
+    12    12    12
+    12    12    12
+==24827== 
+==24827== HEAP SUMMARY:
+==24827==     in use at exit: 0 bytes in 0 blocks
+==24827==   total heap usage: 3 allocs, 3 frees, 74,752 bytes allocated
+==24827== 
+==24827== All heap blocks were freed -- no leaks are possible
+==24827== 
+==24827== For counts of detected and suppressed errors, rerun with: -v
+==24827== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Brak wycieków pamięci

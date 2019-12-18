@@ -1,0 +1,6 @@
+Przykłady:
+- Meltdown Styczeń 2018 r. źródło:https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)
+- Spectre  Styczeń 2018 r. źródło:https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)
+- Cache-timing attack on AES 2005 r. źródło: Daniel J. Bernstein Department of Mathematics, Statistics and Computer Science (M/C 249) The University of Illinois at Chicago Chicago,IL 60607-7045
+
+Najbardziej narażone na atak jest oprogramowanie procesorów,mikroprocesorów.

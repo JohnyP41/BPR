@@ -1,0 +1,6 @@
+mlock - blokuje strony w zakresie adresów, zaczynając od addr i kontynuując dla len bajtów. Wszystkie strony, które zawierają część podanego zakresu adresów, mają gwarancję rezydowania w pamięci RAM po pomyślnym powrocie połączenia; strony pozostaną w pamięci RAM, dopóki nie zostaną odblokowane.
+munlock - odblokowuje strony w zakresie adresów zaczynając od addr i kontynuując dla len bajtów. Po tym wywołaniu wszystkie strony zawierające część określonego zakresu pamięci mogą zostać ponownie przeniesione przez jądro na zewnętrzną przestrzeń wymiany.
+mlockall - blokuje wszystkie strony zmapowane w przestrzeni adresowej procesu wywołującego. Dotyczy to stron kodu, danych i segmentu stosu, a także bibliotek współużytkowanych, danych jądra przestrzeni użytkownika, pamięci współużytkowanej i plików odwzorowanych w pamięci.
+munlockall - odblokowuje wszystkie strony zmapowane w przestrzeni adresowej procesu wywołującego.
+
+W C# można użyć Mutex lub lock.

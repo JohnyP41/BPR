@@ -1,0 +1,26 @@
+///Bez blokad
+s426228@pc22j:~/Desktop/DBPR/dbpr-l3/2$ time ./main1
+var: 10000000
+
+real	0m0,033s
+user	0m0,057s
+sys	0m0,000s
+
+///Z blokadami
+s426228@pc22j:~/Desktop/DBPR/dbpr-l3/2$ time ./main2
+var: 100000000
+
+real	0m5,815s
+user	0m7,854s
+sys	0m3,765s
+
+///Na jednym wątku
+s426228@pc22j:~/Desktop/DBPR/dbpr-l3/2$ time ./main3
+var: 10000000
+
+real	0m0,031s
+user	0m0,028s
+sys	0m0,000s
+
+Wykonanie powyższej operacji w jednym wątku trwałoby krócej.
+Używanie blokad sprawia ,że program działa wolniej.
