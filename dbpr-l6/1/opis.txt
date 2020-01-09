@@ -1,0 +1,8 @@
+W ciągu minuty można odczytać 73,7 MB.
+Metoda: cat /dev/random > plik.txt
+Domyślnie jest 4096 bitów. Rozmiar można sprawdzić w /proc/sys/kernel/random/poolsize. Rozmiar ten jest zapisany w kodzie w linii 275 pliku /drivers/char/random.c. I wygląda następująco:
+
+#define INPUT_POOL_WORDS 128
+#define OUTPUT_POOL_WORDS 32
+
+Rozmiar jest ustalany poprzez pomnożenie INPUT_POOL_WORDS i OUTPUT_POOL_WORDS.

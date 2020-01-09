@@ -1,0 +1,2 @@
+W ciągu minuty z tego źródła można odczytać 470 MB.
+Procesor Intel Xeon CPU E3-1275 v5 3,60GHz.

@@ -1,0 +1,19 @@
+Sprzętowy generator liczb losowych urządzenie, które generuje liczby losowe z procesów fizycznych , zamiast za pomocą algorytmu. 
+Takie urządzenia często oparte są na zjawiskach mikroskopowych, które generują statystycznie losowe sygnały „szumowe” o niskim poziomie, takie jak szum termiczny , efekt fotoelektryczny , obejmujący rozdzielacz wiązki i inne zjawiska kwantowe. 
+Te procesy są teoretycznie całkowicie nieprzewidywalne, a twierdzenia teorii o nieprzewidywalności podlegają testom eksperymentalnym. 
+Sprzętowy generator liczb losowych zazwyczaj składa się z przetwornika do konwersji niektórych aspektów zjawisk fizycznych na sygnał elektryczny, wzmacniacza i innych układów elektronicznych w celu zwiększenia amplitudy wahań losowych do mierzalnego poziomu oraz pewnego rodzaju przetwornika analogowo-cyfrowego w celu przekształcenia wyjścia w liczbę cyfrową, często prostą cyfrę binarną 0 lub 1. 
+Przez wielokrotne próbkowanie losowo zmieniającego się sygnału uzyskuje się szereg liczb losowych.
+
+Quantis Random Number Generator
+Koszt urządzenia: 4205,30 zł
+Czas wygenerowania liczby 1024 bitowej: 244 μs
+Losowość: przechodzi wszystkie testy losowości
+Brak informacji o sposobie whiteningu.
+
+TrueRNG V3
+Koszt urządzenia: 257,66 zł
+Czas wygenerowania liczby 1024 bitowej: 320 μs
+Losowość: Przechodzi wszystkie standardowe testy (Dieharder, ENT, Rngtest, FIPS-140-2)
+Brak informacji o sposobie whiteningu.
+
+Kupiłbym ten drugi.
