@@ -1,0 +1,3 @@
+Aplikacja jest umieszczona na serwerze do którego ma dostęp tylko legalny użytkownik.
+Legalny użytkownik ma dostęp do aplikacji gdy użyje swojego loginu i hasła do serwera.Hasło musi być długie.
+Kod obsługujący w pliku main.cpp

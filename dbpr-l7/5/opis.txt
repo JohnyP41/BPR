@@ -1,0 +1,8 @@
+Wybory elektroniczne.
+Każdy z wyborców ma 1 głos.
+Mamy 3 kandydatów na prezydenta.
+Wyborca wybiera kandydata - głosuje.
+Po zakończeniu wyborów wyborca może sprawdzić na stronie wyniki.
+Mamy 1 admina systemu to on rozpoczyna i zamyka głosowanie.
+Na stronę logujemy się peselem i hasłem otrzymanym w liście do nas.
+Dane użytkowników przechowywane są w bazie danych.

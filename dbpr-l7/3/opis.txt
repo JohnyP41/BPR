@@ -1,0 +1,7 @@
+Oprogramowanie szyfrujemy AES-128CBC kluczem dostarczonym przez jego twórcę.Klucz musi być długi.
+Tylko osoba posiadająca klucz może używać tego oprogramowania.
+
+Cechy metody:
+-wygodna w użyciu
+-szybka
+-prosta
